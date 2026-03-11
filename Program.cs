@@ -11,7 +11,8 @@ namespace poligon_iva2026b
         static void Main(string[] args)
         {
             //Iva Martinek
-            Console.WriteLine("Pozdrav za 3-10")
+            Console.WriteLine("Pozdrav za 3-10");
+
         }
     }
 }
