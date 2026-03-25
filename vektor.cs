@@ -21,5 +21,30 @@ namespace poligon_iva2026b
             Console.WriteLine("Od x1={0}, y1={1} Do x2={2}, y2={3}", pocetak.x, pocetak.y, kraj.x, kraj.y);
             
         }
+        public vektor(tacka a, tacka b)
+        {
+            pocetak = a;
+            kraj = b;
+        }
+        public static int SP (vektor a, vektor b)
+        {
+            tacka A = a.centriraj();
+            tacka B = b.centriraj();
+            double g = A.x * B.x + A.y * B.y;
+            return g;
+        }
+        public statir double VP(vektor a, vektor b)
+        {
+            tacka A = a.centriraj();
+            tacka B = b.centriraj();
+            double k = A.x * B.y - A.y * B.x;
+            return k;
+        }
+        double duzina()
+        {
+            tacka druga = this.centriraj();
+            return druga.d();
+        }
+
     }
 }
