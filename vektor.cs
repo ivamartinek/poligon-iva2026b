@@ -4,47 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace poligon_iva2026b
+namespace poligon_2026_310B
 {
-    internal class vektor
+    internal class tacka
     {
-        public tacka pocetak;
-        public tacka kraj;
-        public tacka centriraj() 
+        public double x;
+        public double y;
+        public double d()
         {
-            double x = kraj.x - pocetak.x;
-            double y = kraj.y - pocetak.y;
-            return tacka(x, y);
+            return Math.Sqrt(x * x + y * y);
         }
-        public void stampaj()
+        public tacka(double a, double b)
         {
-            Console.WriteLine("Od x1={0}, y1={1} Do x2={2}, y2={3}", pocetak.x, pocetak.y, kraj.x, kraj.y);
-            
+            x = a;
+            y = b;
         }
-        public vektor(tacka a, tacka b)
-        {
-            pocetak = a;
-            kraj = b;
-        }
-        public static int SP (vektor a, vektor b)
-        {
-            tacka A = a.centriraj();
-            tacka B = b.centriraj();
-            double g = A.x * B.x + A.y * B.y;
-            return g;
-        }
-        public statir double VP(vektor a, vektor b)
-        {
-            tacka A = a.centriraj();
-            tacka B = b.centriraj();
-            double k = A.x * B.y - A.y * B.x;
-            return k;
-        }
-        double duzina()
-        {
-            tacka druga = this.centriraj();
-            return druga.d();
-        }
-
     }
 }

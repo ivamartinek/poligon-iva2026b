@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace poligon_iva2026b
+namespace poligon_2026_310B     
 {
     internal class tacka
     {
@@ -16,8 +16,8 @@ namespace poligon_iva2026b
         }
         public tacka(double a, double b)
         {
-            x = a; 
+            x = a;
             y = b;
         }
-}
-}
+    }
+}       
