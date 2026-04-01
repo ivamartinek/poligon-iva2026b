@@ -19,5 +19,10 @@ namespace poligon_2026_310B
             x = a;
             y = b;
         }
+        public static bool iste(tacka A, tacka B)
+        {
+            if (( A.x == B.x) && (A.y == B.y)) return true;
+            else return false;
+        }
     }
 }       
