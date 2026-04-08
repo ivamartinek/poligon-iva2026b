@@ -12,6 +12,7 @@ namespace poligon_iva2026b
         {
             poligon prvi = poligon.unos();
             Console.WriteLine(prvi.konveksan());
+
         }
     }
 }
