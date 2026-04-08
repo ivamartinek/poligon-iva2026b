@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace poligon_2026_310B     
-{
+namespace poligon_iva2026b 
+{ 
     internal class tacka
     {
         public double x;
@@ -21,8 +21,8 @@ namespace poligon_2026_310B
         }
         public static bool iste(tacka A, tacka B)
         {
-            if (( A.x == B.x) && (A.y == B.y)) return true;
+            if ((A.x == B.x) && (A.y == B.y)) return true;
             else return false;
         }
     }
-}       
+}

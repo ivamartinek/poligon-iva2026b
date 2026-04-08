@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO;
 
-namespace poligon_2026_310B
+namespace poligon_iva2026b
 {
-    class poligon
+    internal class poligon
     {
         int br_temena;
         tacka[] teme;
@@ -87,7 +87,7 @@ namespace poligon_2026_310B
                 }
             }
             vektor[] stranica = new vektor[br_temena];
-          
+            // napravim stranice
             for (int i = 0; i < br_temena - 2; i++)
             {
                 int kraj = br_temena;
@@ -115,6 +115,5 @@ namespace poligon_2026_310B
         {
             return 0;
         }
-
     }
 }
